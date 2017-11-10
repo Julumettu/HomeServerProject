@@ -1,15 +1,14 @@
 <?php
+	require_once("classes/Login.php");
 
-	require_once("classes/Testailua.php");
-
-	$login = new Testailua();
+	$login = new Login();
 
 	if($login->LoggedIn() == true)
 	{
-		include("views/logged_in.php");
+		require("views/logged_in.php");
 	}
 	else
 	{
-		include("views/not_logged_in.php");
+		require("views/not_logged_in.php");
 	}
 ?>
