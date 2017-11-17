@@ -37,6 +37,8 @@ if ($uploadOk == 0) {
 
     }
 
+header('Location: index.php');
+exit();
 }
 ?>
 

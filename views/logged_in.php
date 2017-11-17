@@ -1,4 +1,3 @@
-
 <body>
 
 <a href="index.php?logout">Logout</a>
@@ -14,9 +13,8 @@
 
 </form>
 
-<?php
-	require("/var/www/html/uploads/list.php");
-?>
+<script src="ins-imgs.php"></script>
+
 </body>
 
 </html>
