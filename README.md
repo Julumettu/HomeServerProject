@@ -12,6 +12,9 @@ Passwords are generated hashes using php-hash library and stored in the database
 The database.db file in this projects directory includes an example to show what form the data should be stored to the database
 in order for it to work in the project. 
 
-The server is currently running with apache2 at juhonkotiserveri.ddns.net.
+Displaying all images in a directory was made modifying the following github project by mikelothar:
+https://github.com/mikelothar/show-all-images-in-a-folder-with-php
+
+The server is currently running with apache2 at https://juhonkotiserveri.ddns.net
 
 Languages used: PHP, Javascript, CSS, SQLite and HTML.
