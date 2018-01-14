@@ -1,20 +1,51 @@
+<?php
+
+if (isset($login)) {
+
+    if ($login->errors) {
+
+        foreach ($login->errors as $error) {
+
+            echo $error;
+
+        }
+
+    }
+
+    if ($login->messages) {
+
+        foreach ($login->messages as $message) {
+
+            echo $message;
+
+        }
+
+    }
+
+}
+
+?>
+<style>
+
+body {
+
+    background-image: url("images/tausta-min.png");
+    background-position: center top;
+    background-size: 100%;
+}
+
+</style>
+
 <body>
-
-<a href="index.php?logout">Logout</a>
-
-
-<form action="upload.php" method="post" enctype="multipart/form-data">
-
-    Valitse tiedosto minkä haluat lähettää:
-
-    <input type="file" name="fileToUpload" id="fileToUpload">
-
-    <input type="submit" value="Upload Image" name="submit">
-
-</form>
-
-<script src="ins-imgs.php"></script>
 
 </body>
 
 </html>
+
+<?php
+include("views/l_side_bar.php");
+include("views/r_side_bar.php");
+include("views/search_bar.php");
+//echo '<script src="ins-imgs.php"></script>';
+?>
+

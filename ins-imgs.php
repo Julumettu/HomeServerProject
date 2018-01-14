@@ -16,6 +16,10 @@ header('Content-Type: text/javascript; charset=UTF-8');
 
 # Path to image folder
 $imageFolder = 'uploads/';
+$search_word = NULL;
+if(isset($_POST["search_word"])){
+	$search_word = $_POST["search_word"];
+}
 
 # Show only these file types from the image folder
 
@@ -79,6 +83,8 @@ if ($sortByImageName) {
 
 writeHtml('<ul class="ins-imgs">');
 
+if(is_null($search_word)){ 
+
 foreach ($sortedImages as $image) {
 
     # Get the name of the image, stripped from image folder path and file type extension
@@ -93,7 +99,7 @@ foreach ($sortedImages as $image) {
 
     writeHtml('<li class="ins-imgs-li">');
 
-    writeHtml('<div class="ins-imgs-img" onclick=this.classList.toggle("zoom");><a name="' . $image . '">');
+    writeHtml('<div class="ins-imgs-img"><a name="' . $image . '">');
 
     writeHtml('<img src="' . data_uri($image,$imageFolder) . '" alt="' . $name . '" title="' . $name . '">');
     writeHtml('</a></div>');
@@ -108,9 +114,11 @@ writeHtml('</ul>');
 writeHtml('<link rel="stylesheet" type="text/css" href="stylesheets/ins-imgs.css">');
 
 # Convert HTML to JS
+}
 
 function writeHtml($html) {
 
     echo "document.write('" . $html . "');\n";
 
 }
+

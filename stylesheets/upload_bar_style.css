@@ -1,0 +1,100 @@
+body {
+
+    font-family: "Lato", sans-serif;
+
+}
+
+.uploadNav {
+    
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 0;
+
+    position: fixed;
+
+    z-index: 1;
+
+    background-color: #1a1a1a;
+
+    overflow: hidden;
+    
+    transition: 1.0s;    
+
+    padding-top: 100px;
+
+}
+
+
+.uploadNav h{
+
+    text-decoration: none;
+    
+    font-size: 25px;
+
+    color: #818181;
+
+    text-align: centered;
+
+    padding-bottom: 25px;
+
+    display: block;
+
+    transition: 2.0s;
+
+}
+
+.closebtn {
+
+    color: #818181;
+
+    position: absolute;
+
+    top: 0;
+
+    right: 25px;
+
+    font-size: 36px;
+
+    margin-left: 50px;
+}
+
+.form{
+
+   padding-bottom: 25px;
+
+}
+
+.uploadNav input[type=file]{
+  
+   color: #818181;
+
+}
+
+.uploadNav a:hover {
+
+    color: #f1f1f1;
+
+}
+
+.main {
+
+    margin-left: 200px; /* Same as the width of the sidenav */
+    
+}
+
+
+
+@media screen and (max-height: 450px) {
+
+  .uploadNav {padding-top: 15px;}
+
+  .uploadNav a {font-size: 18px;}
+  
+}
+
+
+
