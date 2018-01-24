@@ -46,6 +46,5 @@ body {
 include("views/l_side_bar.php");
 include("views/r_side_bar.php");
 include("views/search_bar.php");
-//echo '<script src="ins-imgs.php"></script>';
 ?>
 
